@@ -14,9 +14,11 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
 } from '@tanstack/table-core';
+import {
+  FlexRenderDirective,
+  createAngularTable,
+} from 'angular-tanstack-table';
 import { BehaviorSubject, Subject, combineLatest, map, takeUntil } from 'rxjs';
-import { createAngularTable } from '../../../../projects/angular-tanstack-table/src/lib';
-import { FlexRenderDirective } from '../../../../projects/angular-tanstack-table/src/public-api';
 import { mockData } from '../utils/mockdata';
 import { Person } from '../utils/person';
 import { FilterComponent } from './../../components/filter';

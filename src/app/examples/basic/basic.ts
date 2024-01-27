@@ -4,7 +4,7 @@ import { ColumnDef, Table, getCoreRowModel } from '@tanstack/table-core';
 import {
   FlexRenderDirective,
   createAngularTable,
-} from '../../../../projects/angular-tanstack-table/src/public-api';
+} from 'angular-tanstack-table';
 import { Person } from '../utils/person';
 
 const defaultColumns: ColumnDef<Person>[] = [
