@@ -1,0 +1,74 @@
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-family: var(--font-family);
+  gap: 5px;
+}
+
+.pagination-button {
+  background-color: var(--color-white);
+  color: var(--color-back);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: var(--font-size);
+  transition: background-color 0.3s ease;
+
+  &:disabled {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    cursor: not-allowed;
+  }
+}
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size);
+  color: var(--color-dark);
+
+  div {
+    margin-right: 5px;
+  }
+
+  strong {
+    margin-left: 5px;
+  }
+}
+
+.pagination-input {
+  width: 80px;
+  padding: 0.7rem;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--border-radius-1);
+  font-size: var(--font-size);
+  color: var(--color-dark);
+  margin: 1rem;
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+}
+
+.pagination-select {
+  width: 150px;
+  padding: 0.7rem;
+  margin-left: 5px;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--border-radius-1);
+  font-size: var(--font-size);
+  color: var(--color-dark);
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+}

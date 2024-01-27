@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+// font
+$font-family: "Poppins", sans-serif;
+$font-size: 14px;
+
+// custom colors
+$primary: #7380ec;
+$accent: #49beff;
+$warning: #ffbb55;
+$error: #ff7782;
+$success: #41f1b6;
+$white: #ffffff;
+
+$info-dark: #7d8da1;
+$info-light: #dce1eb;
+$dark: #363949;
+$light: rgba(132, 139, 200, 0.18);
+$primary-variant: #111e88;
+$dark-variant: #677483;
+
+$background: #f6f6f9;
+
+//border radius
+$border-radius: 2rem;
+$border-radius-1: 0.4rem;
+$border-radius-2: 0.8rem;
+$border-radius-3: 1.2rem;
+
+//padding
+$card-padding: 1.8rem;
+$padding-1: 1.2rem;
+
+//shadow
+$box-shadow: 0 2rem 3rem $light;
+
+//dark colors
+$dark-background: #181a1e;
+$dark-white: #202528;
+$dark-dark: #edeffd;
+$dark-dark-variant: #a3bdcc;
+$dark-light: rgba(0, 0, 0, 0.4);
+$darkbox-shadow: 0 2rem 3rem $light;
+
+:root {
+  --color-primary: #{$primary};
+  --color-danger: #{$error};
+  --color-success: #{$success};
+  --color-warning: #{$warning};
+  --color-white: #{$white};
+  --color-info-dark: #{info-dark};
+  --color-info-light: #{$info-dark};
+  --color-dark: #{$dark};
+  --color-light: #{$light};
+  --color-primary-variant: #{$primary-variant};
+  --color-dark-variant: #{$dark-variant};
+  --color-background: #{$background};
+
+  --card-border-radius: #{$border-radius};
+  --border-radius-1: #{$border-radius-1};
+  --border-radius-2: #{$border-radius-2};
+  --border-radius-3: #{$border-radius-3};
+
+  --card-padding: #{$card-padding};
+  --padding-1: #{$card-padding};
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+
+  --font-size: #{$font-size};
+  --font-family: #{$font-family};
+}

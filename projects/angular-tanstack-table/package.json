@@ -1,0 +1,41 @@
+{
+  "name": "angular-tanstack-table",
+  "version": "1.0.0",
+  "description": "tanstack table adapter for angular",
+  "author": {
+    "name": "Janakirao Gokavalsa",
+    "url": "https://github.com/jrgokavalsa"
+  },
+  "keywords": [
+    "angular",
+    "table",
+    "tanstack-table",
+    "angular-tanstack-adapter",
+    "angular-table",
+    "angular-material-table",
+    "angular-grid",
+    "sortable-table",
+    "grouping-table",
+    "data-table",
+    "datatable",
+    "pagination",
+    "filterable-table"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrgokavalsa/angular-tanstack-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrgokavalsa/angular-tanstack-adapter/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^17.1.0",
+    "@angular/core": "^17.1.0",
+    "@tanstack/table-core": "^8.11.7"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
