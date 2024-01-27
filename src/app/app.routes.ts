@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import { BasicComponent } from './examples/basic/basic';
-import { GroupingComponent } from './examples/grouping/grouping';
-import { SelectingComponent } from './examples/selecting/selecting';
-import { SortingComponent } from './examples/sorting/sorting';
 import { AppLayoutComponent } from './layout/layout.component';
 
 export const routes: Routes = [
@@ -12,11 +8,30 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: BasicComponent,
+        loadComponent: () =>
+          import('./examples/basic/basic').then((mod) => mod.BasicComponent),
       },
-      { path: 'sorting', component: SortingComponent },
-      { path: 'grouping', component: GroupingComponent },
-      { path: 'selecting', component: SelectingComponent },
+      {
+        path: 'sorting',
+        loadComponent: () =>
+          import('./examples/sorting/sorting').then(
+            (mod) => mod.SortingComponent
+          ),
+      },
+      {
+        path: 'grouping',
+        loadComponent: () =>
+          import('./examples/grouping/grouping').then(
+            (mod) => mod.GroupingComponent
+          ),
+      },
+      {
+        path: 'selecting',
+        loadComponent: () =>
+          import('./examples/selecting/selecting').then(
+            (mod) => mod.SelectingComponent
+          ),
+      },
     ],
   },
 ];
