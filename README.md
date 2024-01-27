@@ -1,5 +1,7 @@
 # angular-tanstack-table
 
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?color=blue&style=flat-square)](http://opensource.org/licenses/MIT)
+
 Angular-tanstack-table is a GitHub repository that provides an adapter for using tanstack table library in Angular applications. It allows you to create and customize data tables with features such as sorting, filtering, pagination, and more.
 
 ## Prerequisites

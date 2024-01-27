@@ -32,9 +32,10 @@
   "peerDependencies": {
     "@angular/common": "^17.1.0",
     "@angular/core": "^17.1.0",
-    "@tanstack/table-core": "^8.11.7",
+    "@tanstack/table-core": "^8.11.7"
+  },
+  "dependencies": {
     "tslib": "^2.3.0"
   },
-  "dependencies": {},
   "sideEffects": false
 }
