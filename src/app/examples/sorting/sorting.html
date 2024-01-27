@@ -1,0 +1,49 @@
+<div class="tanstack-table">
+  <h2>Sorting</h2>
+  @if (table) {
+  <table>
+    <thead>
+      @for (headerGroup of table.getHeaderGroups(); track headerGroup.id) {
+      <tr>
+        @for (header of headerGroup.headers; track header.id) {
+        <th [attr.colSpan]="header.colSpan">
+          @if (!header.isPlaceholder) {
+          <div (click)="header.column.toggleSorting()">
+            <ng-container
+              *flexRender="header.column.columnDef.header;props:header.getContext()
+                  let
+                  sortHeader"
+            >
+              {{sortHeader}} @if (header.column.getCanSort()) {
+              <span class="material-icons-sharp">
+                {{header.column.getIsSorted()==='asc'?
+                'arrow_drop_up':(header.column.getIsSorted() === 'desc' ?
+                'arrow_drop_down' : '')}}
+              </span>
+              }
+            </ng-container>
+          </div>
+          }
+        </th>
+        }
+      </tr>
+      }
+    </thead>
+    <tbody>
+      @for (row of table.getRowModel().rows.slice(0, 10); track row.id) {
+      <tr>
+        @for (cell of row.getVisibleCells(); track cell.id) {
+        <td>
+          <ng-container
+            *flexRender="cell.column.columnDef.cell;props:cell.getContext() let contentCell"
+          >
+            {{contentCell}}
+          </ng-container>
+        </td>
+        }
+      </tr>
+      }
+    </tbody>
+  </table>
+  }
+</div>
